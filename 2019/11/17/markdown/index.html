@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script>
+  var _hmt = _hmt || []
+  ;(function() {
+    var hm = document.createElement('script')
+    hm.src = 'https://hm.baidu.com/hm.js?5a0acc897fd96474a2c8f4deac84611a'
+    var s = document.getElementsByTagName('script')[0]
+    s.parentNode.insertBefore(hm, s)
+  })()
+</script> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    
+    <title>
+      Markdown使用入门 - Pup
+    </title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/style/style.css">
+  </head>
+  <body>
+    
+    <div id="post-toc" class="animated hiddenToc hide">
+      <span class="title">Toc</span>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#MD文件编写的简单常用介绍！"><span class="toc-text">MD文件编写的简单常用介绍！</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#标题使用-H"><span class="toc-text">标题使用 H</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#这是H1"><span class="toc-text">这是H1#</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#这是h2"><span class="toc-text">这是h2##</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#这是h3"><span class="toc-text">这是h3###</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#这是h4"><span class="toc-text">这是h4####</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#这是h5"><span class="toc-text">这是h5#####</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#这是h6"><span class="toc-text">这是h6######</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#区块引用-Blockquotes"><span class="toc-text">区块引用 Blockquotes</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#换行符"><span class="toc-text">换行符</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#列表"><span class="toc-text">列表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#如果在行首出现数字-句点-空白时，避免列表形式展示，可以在句点前面加上反斜杠"><span class="toc-text">如果在行首出现数字-句点-空白时，避免列表形式展示，可以在句点前面加上反斜杠 \</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#代码区块"><span class="toc-text">代码区块</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#分割线"><span class="toc-text">分割线</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#区块元素"><span class="toc-text">区块元素</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#链接"><span class="toc-text">链接</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#行内式"><span class="toc-text">行内式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#参考式"><span class="toc-text">参考式</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#隐式连接（可以省略指定链接标记）"><span class="toc-text">隐式连接（可以省略指定链接标记）</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#强调"><span class="toc-text">强调</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a>
+    </div>
+    
+    <div id="fixed-menu-wrap">
+      <span class="iconfont icon-sousuo menu-reset"></span>
+      <span class="icon-toc menu-reset">Toc</span>
+      <span class="iconfont icon-arrowup menu-reset"></span>
+    </div>
+    <div id="fixed-menu">
+      <span class="iconfont icon-menu-"></span>
+    </div>
+    <div id="progress">
+      <div class="line"></div>
+    </div>
+    <div id="search-shade" class="animated hiddenSearch hide">
+      <div class="input-wrap">
+        <span class="iconfont icon-sousuo"></span>
+        <input type="text" placeholder="Search" />
+        <span class="iconfont icon-close"></span>
+      </div>
+      <div class="search-result">
+        <div class="meta">
+          <span><b id="result-count">0</b> results found</span>
+          <img src="/images/logo.jpeg" />
+        </div>
+        <ul id="result-box"></ul>
+      </div>
+    </div>
+    <div id="menu-mask" class="animated hideMenuMask hide">
+      <span class="iconfont icon-close"></span>
+      <div class="nav">
+        
+        <a href="/" class="">
+          Home
+        </a>
+        
+        <a href="/archives" class="">
+          Archives
+        </a>
+        
+        <a href="/categories" class="">
+          Categories
+        </a>
+        
+        <a href="/tags" class="">
+          Tags
+        </a>
+        
+        <a href="/friends" class="">
+          Friends
+        </a>
+        
+        <a href="/about" class="">
+          About
+        </a>
+        
+      </div>
+    </div>
+    <div id="header">
+      <div class="intro">
+        <a href="/" class="logo" style="background-image: url('/images/logo.jpeg')"></a>
+        <div class="author">李艳红</div>
+      </div>
+      <div class="nav">
+        <span class="iconfont icon-menu menu-icon"></span>
+        <a href="#" class="search-box">
+          <span class="iconfont icon-sousuo"></span>
+        </a>
+      </div>
+    </div>
+    <div id="side" class="animated bounceInLeft">
+      <div class="shrink">
+        <a href="/" class="logo" style="background-image: url('/images/logo.jpeg')"></a>
+        <span class="iconfont icon-menu toggle-icon"></span>
+        <a href="#" class="search-box">
+          <span class="iconfont icon-sousuo"></span>
+        </a>
+      </div>
+      <div class="magnify">
+        <div class="about">
+          <div class="author">李艳红</div>
+          <a href="/" class="logo" style="background-image: url('/images/logo.jpeg')"></a>
+        </div>
+
+        <div class="nav">
+          
+          <a href="/" class="">
+            Home
+          </a>
+          
+          <a href="/archives" class="">
+            Archives
+          </a>
+          
+          <a href="/categories" class="">
+            Categories
+          </a>
+          
+          <a href="/tags" class="">
+            Tags
+          </a>
+          
+          <a href="/friends" class="">
+            Friends
+          </a>
+          
+          <a href="/about" class="">
+            About
+          </a>
+          
+          <a href="#" class="search-box">
+            <span class="iconfont icon-sousuo"></span>
+          </a>
+        </div>
+        <div class="bottom">
+          <div class="follow">
+            
+            <a href="https://github.com/pup-uzi" target="_block">
+              <span class="iconfont icon-github"></span>
+            </a>
+            
+            <a href="" target="_block">
+              <span class="iconfont icon-facebook"></span>
+            </a>
+            
+            <a href="" target="_block">
+              <span class="iconfont icon-twitter"></span>
+            </a>
+            
+            <a href=" " target="_block">
+              <span class="iconfont icon-weixin"></span>
+            </a>
+            
+            <a href=" " target="_block">
+              <span class="iconfont icon-alipay"></span>
+            </a>
+            
+            <a href="" target="_block">
+              <span class="iconfont icon-weibo"></span>
+            </a>
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div class="main animated bounceInRight delay-0.7s">
+        <article class="post-entry">
+    <div class="header">
+      
+      <div class="title">Markdown使用入门</div>
+      <div class="meta">
+        <span class="item">
+          <span class="iconfont icon-time-circle"></span>
+          <span>2019/11/17</span>
+        </span>
+
+        
+
+         
+        <span class="item">
+          <span class="iconfont icon-folder"></span>
+          <span>
+              
+                
+                  <a href="/categories/writing">writing</a>
+                
+              
+          </span>
+        </span>
+        
+        
+         
+          <span class="item">
+            <span class="iconfont icon-tag1"></span>
+            <span>
+                
+                  
+                    <a href="/tags/others">others</a>
+                  
+                
+            </span>
+          </span>
+         
+      </div>
+      <div>
+      </div>
+    </div>
+     
+<h3 id="MD文件编写的简单常用介绍！">MD文件编写的简单常用介绍！<a class="post-anchor" href="#MD文件编写的简单常用介绍！"></a></h3><a id="more"></a>
+
+<p>###markdown通过简单的的标记语法就可以使自己的文本内容更加（you）美（bi）观（ge），而不需要掌握太多网页的知识，方便我们使用，所以掌握markdown语法还是很有必要的，下面就简单的介绍下markdown快速入门的语法要点。</p>
+<hr>
+<h1 id="标题使用-H">标题使用 H<a class="post-anchor" href="#标题使用-H"></a></h1><blockquote>
+<h1 id="这是H1">这是H1#<a class="post-anchor" href="#这是H1"></a></h1><blockquote>
+<h2 id="这是h2">这是h2##<a class="post-anchor" href="#这是h2"></a></h2><blockquote>
+<h3 id="这是h3">这是h3###<a class="post-anchor" href="#这是h3"></a></h3><blockquote>
+<h4 id="这是h4">这是h4####<a class="post-anchor" href="#这是h4"></a></h4><blockquote>
+<h5 id="这是h5">这是h5#####<a class="post-anchor" href="#这是h5"></a></h5><blockquote>
+<h6 id="这是h6">这是h6######<a class="post-anchor" href="#这是h6"></a></h6></blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>#####行首插入 1 到 6 个 <code>#</code> ，对应到标题 1 到 6 阶。行首的井字符数量决定标题的阶数。 行尾的<code>#</code>可以不写，但为了美观可以加上  ###</p>
+</blockquote>
+<h1 id="区块引用-Blockquotes">区块引用 Blockquotes<a class="post-anchor" href="#区块引用-Blockquotes"></a></h1><blockquote>
+<p>This is a blockquote with two paragraphs.</p>
+</blockquote>
+<p>在行首用<code>&gt;</code>来作为区块引用的开始</p>
+<h1 id="换行符">换行符<a class="post-anchor" href="#换行符"></a></h1><blockquote>
+<p>使用html中的<code>&lt;br&gt;</code> 作为换行符，在恰当的地方对某一段长文字进行换行</p>
+</blockquote>
+<h1 id="列表">列表<a class="post-anchor" href="#列表"></a></h1><blockquote>
+<p>Markdown 支持有序列表和无序列表。无序列表使用<code>*</code>、<code>+</code>或是<code>-</code>作为列表标记，这三种符号都可达到相同的效果；有序列表则使用数字接着一个英文句点<code>.</code>。</p>
+</blockquote>
+<ul>
+<li>红色</li>
+</ul>
+<ul>
+<li>绿色</li>
+</ul>
+<ul>
+<li>黑色</li>
+</ul>
+<ol>
+<li>男人</li>
+<li>女人</li>
+<li>其他</li>
+</ol>
+<blockquote>
+<ul>
+<li>ios</li>
+</ul>
+</blockquote>
+<ul>
+<li>android</li>
+</ul>
+<h4 id="如果在行首出现数字-句点-空白时，避免列表形式展示，可以在句点前面加上反斜杠"><strong>如果在行首出现数字-句点-空白时，避免列表形式展示，可以在句点前面加上反斜杠 <code>\</code></strong><a class="post-anchor" href="#如果在行首出现数字-句点-空白时，避免列表形式展示，可以在句点前面加上反斜杠"></a></h4><blockquote>
+<p>111.2 What a great season.</p>
+</blockquote>
+<h1 id="代码区块">代码区块<a class="post-anchor" href="#代码区块"></a></h1><blockquote>
+<p>代码块展示（需要四个空格键，或者两次tab键）   </p>
+</blockquote>
+<pre><code>谷歌     谷歌     谷歌     谷歌     谷歌   谷歌   谷歌</code></pre><h1 id="分割线">分割线<a class="post-anchor" href="#分割线"></a></h1><blockquote>
+<p>产生分割线需要用<code>*</code>, <code>-</code> 来作为分割线（不少于三个连续的符号，中间可以有空格）</p>
+</blockquote>
+<hr>
+<hr>
+<hr>
+<hr>
+<h1 id="区块元素">区块元素<a class="post-anchor" href="#区块元素"></a></h1><h3 id="链接">链接<a class="post-anchor" href="#链接"></a></h3><blockquote>
+<p>Markdown 支持两种形式的链接语法： 行内式和参考式两种形式。不管是哪一种，链接文字都是用 [方括号] 来标记。</p>
+</blockquote>
+<h5 id="行内式">行内式<a class="post-anchor" href="#行内式"></a></h5><p>This is <a href="http://www.baidu.com/" target="_blank" rel="noopener" title="Title">an example</a> inline link.</p>
+<blockquote>
+<p>This is [an example](<a href="http://www.baidu.com/" target="_blank" rel="noopener">http://www.baidu.com/</a> “Title”) inline link.</p>
+</blockquote>
+<h5 id="参考式">参考式<a class="post-anchor" href="#参考式"></a></h5><p>This is [an example] [id] reference-style link.<br>[id]: <a href="http://www.baidu.com/" target="_blank" rel="noopener">http://www.baidu.com/</a>  “Optional Title Here”</p>
+<blockquote>
+<p>This is [an example] [id] reference-style link.<br>[id]: <a href="http://www.baidu.com/" target="_blank" rel="noopener">http://www.baidu.com/</a>  “Optional Title Here”</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">链接内容定义的形式为：</span><br><span class="line"></span><br><span class="line">方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字</span><br><span class="line">接着一个冒号</span><br><span class="line">接着一个以上的空格或制表符</span><br><span class="line">接着链接的网址</span><br><span class="line">选择性地接着 title 内容，可以用单引号、双引号或是括弧包着</span><br></pre></td></tr></table></figure>
+<h4 id="隐式连接（可以省略指定链接标记）">隐式连接（可以省略指定链接标记）<a class="post-anchor" href="#隐式连接（可以省略指定链接标记）"></a></h4><p>[google][]<br>[google]: <a href="http://www.google.com/" target="_blank" rel="noopener">http://www.google.com/</a></p>
+<blockquote>
+<p>[google][]<br>[google]: <a href="http://www.google.com/" target="_blank" rel="noopener">http://www.google.com/</a></p>
+</blockquote>
+<h1 id="强调">强调<a class="post-anchor" href="#强调"></a></h1><blockquote>
+<p>Markdown 使用星号<code>*</code>和底线<code>_</code>作为标记强调字词的符号，如果 <code>*</code> 和 <code>_</code> 两边都有空白的话，它们就只会被当成普通的符号。<br>使用<code>**</code> 或者 <code>__</code> 可以使“强调”字体加粗。</p>
+</blockquote>
+<p><em>fishcoder</em></p>
+<p>我叫<strong>冉冉</strong>，一个大帅锅。嘿嘿……</p>
+<h1 id="代码">代码<a class="post-anchor" href="#代码"></a></h1><blockquote>
+<p>可以用反引号把它包起来（`）</p>
+</blockquote>
+<p>例如：｀｀｀中间放入代码片段｀｀｀</p>
+<blockquote>
+<p>如果要在代码区段内插入反引号，用多个反引号`来开启和结束代码区段：</p>
+</blockquote>
+<figure class="highlight plain"><figcaption><span>is a literal backtick (`) here.```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 图片</span><br><span class="line">&gt; Markdown 使用一种和链接很相似的语法来标记图片，同样也允许两种样式： 行内式和参考式。</span><br><span class="line"></span><br><span class="line">##### 行内式</span><br><span class="line">![alt text](https://www.baidu.com/img/2016_6_1newlogo_ff08fb58ae7a2aa98911f07b51fe97ed.png)</span><br><span class="line"></span><br><span class="line">&gt;![alt text] \(https://www.baidu.com/img/2016_6_1newlogo_ff08fb58ae7a2aa98911f07b51fe97ed.png)</span><br><span class="line"></span><br><span class="line">![Alt text](http://img0.imgtn.bdimg.com/it/u=4049430624,1216397086&amp;fm=21&amp;gp=0.jpg &quot;Optional title&quot;)</span><br></pre></td></tr></table></figure>
+<p>一个惊叹号 !<br>接着一个方括号，里面放上图片的替代文字<br>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的 ‘title’ 文字。</p>
+<pre><code>
+# 其他
+  #### 自动连接
+  &gt;Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用方括号包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样.
+
+  &lt;http://www.baidu.com&gt;
+
+  #### 反斜杠
+  &gt;Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号
+
+
+  #### 表格
+  | 左对齐标题 | 右对齐标题 | 居中对齐标题 |
+  | :------| ------: | :------: |
+  | 短文本 | 中等文本 | 稍微长一点的文本 |
+  | 稍微长一点的文本 | 短文本 | 中等文本 |
+
+  &gt;\| 左对齐标题 | 右对齐标题 | 居中对齐标题 |
+  | :------| ------: | :------: |
+  | 短文本 | 中等文本 | 稍微长一点的文本 |
+  | 稍微长一点的文本 | 短文本 | 中等文本 |</code></pre>
+
+  
+    <div class="post-reward">
+    <div id="reward-button">打赏</div>
+      <div id="qr">
+        <div class="wrap">
+            
+            <div class="bg-wrap">
+              <a href="/images/zhifubao.png" target="_block" class="bg" style="background-image:url('/images/zhifubao.png')"></a>
+              支付宝
+            </div>
+            
+            
+            <div class="bg-wrap">
+                <a href="/images/weixin.png" target="_block" class="bg" style="background-image:url('/images/weixin.png')"></a>
+              微信
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  
+  <div class="post-guide">
+    <div class="item left">
+        
+    </div>
+    <div class="item right">
+        
+    </div>
+  </div>
+
+  
+
+  <div class="post-copyright">
+    <div class="auth">
+      本文作者：<a href="http://yoursite.com">李艳红</a>
+    </div>
+    <div class="link">
+      永久链接：<a href="http://yoursite.com/2019/11/17/markdown/">http://yoursite.com/2019/11/17/markdown/</a>
+    </div>
+    <div class="declare">
+      版权声明：本文首发于<a href="http://yoursite.com">李艳红</a>的博客，转载请注明出处！
+    </div>
+  </div>
+
+  <div id="comment"></div>
+
+  
+  
+</article>
+        <footer>
+          
+          <div class="copyright">
+            简单 简简单单 |
+            ©2019
+            <a href="http://yoursite.com">李艳红</a> |  Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 
+          </div>
+          
+        </footer>
+      </div>
+    </div>
+  </body>
+  
+</html>
+<script type="text/javascript">
+                  window.HUHU_CONFIG = JSON.parse("{\"share\":[\"weibo\",\"weixin\",\"qqkongjian\",\"QQ\",\"douban\",\"facebook\",\"twitter\",\"google\"],\"service_worker\":{\"open\":false}}")
+                </script> <script type="text/javascript">window.addEventListener('load', function() {
+    
+    window.loadJs = function(d, m, a) {
+      var c = document.getElementsByTagName('head')[0] || document.head || document.documentElement
+      var b = document.createElement('script')
+      b.defer = true
+      b.setAttribute('type', 'text/javascript')
+      b.setAttribute('charset', 'UTF-8')
+      b.setAttribute('async', 'true')
+      b.setAttribute('src', d)
+      m && b.setAttribute('data-main', '/scripts/app-built')
+      if (typeof a === 'function') {
+        if (window.attachEvent) {
+          b.onreadystatechange = function() {
+            var e = b.readyState
+            if (e === 'loaded' || e === 'complete') {
+              b.onreadystatechange = null
+              a()
+            }
+          }
+        } else {
+          b.onload = a
+        }
+      }
+      c.appendChild(b)
+    }
+    window.loadJs && window.loadJs('https://cdn.bootcss.com/require.js/2.3.6/require.min.js', true, function() {require.config({"paths":{"util":"util","share":"share","search":"search","registerSW":"registerSW","valine":"cdn/Valine.min","av":["https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min"],"pjax":["https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min"],"jquery":["https://cdn.bootcss.com/jquery/3.4.1/jquery.min"],"confirm":["https://cdn.bootcss.com/jquery-confirm/3.3.4/jquery-confirm.min"],"fancybox":["https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min"],"chart":["https://cdn.bootcss.com/Chart.js/2.8.0-rc.1/Chart.bundle.min"]},"map":{"*":{"css":"https://cdn.bootcss.com/require-css/0.1.10/css.min.js"}},"shim":{"fancybox":{"deps":["css!https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css"]},"confirm":{"deps":["css!https://cdn.bootcss.com/jquery-confirm/3.3.4/jquery-confirm.min.css"]},"chart":{"deps":["css!https://cdn.bootcss.com/Chart.js/2.8.0-rc.1/Chart.min.css"]}},"waitSeconds":3})})
+  })</script> <script type="text/javascript">
+                  ;(function() {
+                    var bp = document.createElement('script')
+                    var curProtocol = window.location.protocol.split(':')[0]
+                    if (curProtocol === 'https') {
+                      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'
+                    } else {
+                      bp.src = 'http://push.zhanzhang.baidu.com/push.js'
+                    }
+                    var s = document.getElementsByTagName('script')[0]
+                    s.parentNode.insertBefore(bp, s)
+                  })()
+                </script> 
